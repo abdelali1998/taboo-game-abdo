@@ -11,8 +11,8 @@
     "socket.io": "^4.7.2",
     "helmet": "^7.0.0",
     "compression": "^1.7.4"
-  },
+    
   "engines": {
-    "node": "18.x"
+    "node": "20.x"
   }
 }
