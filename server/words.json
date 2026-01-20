@@ -1,0 +1,113 @@
+{
+  "en": {
+    "easy": [
+      "Apple", "Banana", "Sunshine", "Pizza", "Guitar", "Computer", "Train", "Ocean", "Clock", "Money", 
+      "Coffee", "Summer", "Lion", "Baby", "Mirror", "Door", "Shoes", "Book", "Smile", "Camera",
+      "Butterfly", "Rainbow", "Ice Cream", "Diamond", "Fire", "Water", "Moon", "Cloud", "Tree", "Flower",
+      "Chair", "Table", "Bed", "Window", "Key", "Phone", "Ring", "Hat", "Glass", "Spoon",
+      "Dog", "Cat", "Fish", "Bird", "Horse", "Car", "Bus", "Bike", "Plane", "Ship"
+    ],
+    "hard": [
+      "Democracy", "Nostalgia", "Paradox", "Evolution", "Metaphor", "Hypothesis", "Algorithm", "Quantum", "Inflation", "Consciousness", 
+      "Globalization", "Irony", "Bureaucracy", "Diplomacy", "Philosophy", "Spectrum", "Monopoly", "Gravity", "Relativity", "Eclipse",
+      "Existentialism", "Surrealism", "Narcissism", "Procrastination", "Serendipity", "Deja Vu", "Melancholy", "Ambition", "Corruption", "Propaganda",
+      "Capitalism", "Socialism", "Feminism", "Atheism", "Theology", "Psychology", "Sociology", "Anthropology", "Archaeology", "Astronomy",
+      "Photosynthesis", "Osmosis", "Thermodynamics", "Aerodynamics", "Cryptography", "Nanotechnology", "Metaphysics", "Epistemology", "Utilitarianism", "Stoicism"
+    ],
+    "people": [
+      "Einstein", "Shakespeare", "Messi", "Ronaldo", "Michael Jackson", "Beyonce", "Elon Musk", "Obama", "Harry Potter", "Batman", 
+      "Superman", "Spiderman", "Joker", "Queen Elizabeth", "Marilyn Monroe", "Brad Pitt", "Taylor Swift", "Leonardo DiCaprio", "Darwin", "Picasso",
+      "Steve Jobs", "Bill Gates", "Mark Zuckerberg", "Oprah Winfrey", "Martin Luther King", "Nelson Mandela", "Gandhi", "Churchill", "Hitler", "Stalin",
+      "Tom Cruise", "Johnny Depp", "Will Smith", "Dwayne Johnson", "Kevin Hart", "Eminem", "Rihanna", "Justin Bieber", "Kanye West", "Kim Kardashian",
+      "LeBron James", "Michael Jordan", "Tiger Woods", "Serena Williams", "Usain Bolt", "Muhammad Ali", "Mike Tyson", "Conor McGregor", "Floyd Mayweather", "Pacquiao"
+    ],
+    "places": [
+      "Paris", "London", "New York", "Tokyo", "Dubai", "Egypt", "Pyramids", "Eiffel Tower", "Mars", "Great Wall of China", 
+      "Amazon Rainforest", "Mount Everest", "Statue of Liberty", "Rome", "Venice", "Hollywood", "Las Vegas", "Antarctica", "Sahara", "Bermuda Triangle",
+      "Grand Canyon", "Niagara Falls", "Machu Picchu", "Taj Mahal", "Colosseum", "Stonehenge", "Petra", "Sydney Opera House", "Burj Khalifa", "Louvre",
+      "Hawaii", "Alaska", "California", "Florida", "Texas", "Moscow", "Berlin", "Madrid", "Barcelona", "Amsterdam",
+      "North Pole", "South Pole", "Moon", "Sun", "Jupiter", "Saturn", "Milky Way", "Black Hole", "International Space Station", "Area 51"
+    ],
+    "culture": [
+      "Star Wars", "Titanic", "Avatar", "Coca Cola", "McDonalds", "iPhone", "Instagram", "Netflix", "Yoga", "Olympics", 
+      "World Cup", "Jazz", "Rock n Roll", "Oscar", "Nobel Prize", "Internet", "Bitcoin", "Google", "Youtube", "TikTok",
+      "Game of Thrones", "Breaking Bad", "Friends", "The Simpsons", "SpongeBob", "Marvel", "DC Comics", "Disney", "Pixar", "Nintendo",
+      "PlayStation", "Xbox", "Fortnite", "Minecraft", "Pokemon", "Super Mario", "GTA", "Call of Duty", "FIFA", "League of Legends",
+      "Halloween", "Christmas", "Easter", "Thanksgiving", "Valentine", "New Year", "Ramadan", "Diwali", "Hanukkah", "Black Friday"
+    ]
+  },
+  "fr": {
+    "easy": [
+      "Pomme", "Soleil", "Voiture", "Plage", "Chien", "Maison", "Fleur", "Livre", "Musique", "Argent", 
+      "Pain", "Chaussure", "Mer", "Montagne", "Hiver", "Stylo", "Lit", "Fenêtre", "Arbre", "Oiseau",
+      "Vélo", "Bateau", "Avion", "Train", "Bus", "Chat", "Poisson", "Cheval", "Vache", "Cochon",
+      "Rouge", "Bleu", "Vert", "Jaune", "Noir", "Blanc", "Rose", "Orange", "Gris", "Marron",
+      "Tête", "Main", "Pied", "Oeil", "Nez", "Bouche", "Oreille", "Cheveux", "Dent", "Langue"
+    ],
+    "hard": [
+      "Existentialisme", "Bureaucratie", "Mélancolie", "Surréalisme", "Patrimoine", "Laïcité", "Diplomatie", "Métaphysique", "Paradoxe", "Inflation", 
+      "Constitution", "Hypothèse", "Algorithme", "Écosystème", "Solidarité", "Souveraineté", "Ironie", "Utopie", "Révolution", "Philosophie",
+      "Déontologie", "Epistémologie", "Sociologie", "Psychologie", "Anthropologie", "Archéologie", "Astronomie", "Astrologie", "Théologie", "Idéologie",
+      "Capitalisme", "Socialisme", "Communisme", "Libéralisme", "Fascisme", "Anarchisme", "Féminisme", "Ecologie", "Mondialisation", "Urbanisation",
+      "Résilience", "Bienveillance", "Empathie", "Altruisme", "Narcissisme", "Hédonisme", "Stoïcisme", "Pragmatisme", "Cynisme", "Scepticisme"
+    ],
+    "people": [
+      "Zidane", "Mbappé", "Napoleon", "Victor Hugo", "Molière", "Céline Dion", "Edith Piaf", "Stromae", "Omar Sy", "Marie Curie", 
+      "Louis XIV", "Jeanne d'Arc", "Asterix", "Tintin", "Coco Chanel", "Daft Punk", "Gérard Depardieu", "Jean Dujardin", "Marion Cotillard", "Sartre",
+      "Charles de Gaulle", "Emmanuel Macron", "François Hollande", "Nicolas Sarkozy", "Jacques Chirac", "François Mitterrand", "Valéry Giscard d'Estaing", "Georges Pompidou", "René Coty", "Vincent Auriol",
+      "Johnny Hallyday", "Charles Aznavour", "Serge Gainsbourg", "Claude François", "Dalida", "Mylène Farmer", "Vanessa Paradis", "Alizée", "Jenifer", "M Pokora",
+      "Teddy Riner", "Tony Parker", "Sébastien Loeb", "Alain Prost", "Yannick Noah", "Amélie Mauresmo", "Laure Manaudou", "Florent Manaudou", "Renaud Lavillenie", "Martin Fourcade"
+    ],
+    "places": [
+      "Tour Eiffel", "Louvre", "Notre Dame", "Versailles", "Mont Saint Michel", "Champs Elysées", "Marseille", "Lyon", "Bordeaux", "Nice", 
+      "Monaco", "Corse", "Alpes", "Seine", "Côte d'Azur", "Disneyland Paris", "Arc de Triomphe", "Bretagne", "Normandie", "Provence",
+      "Strasbourg", "Lille", "Toulouse", "Nantes", "Montpellier", "Rennes", "Reims", "Le Havre", "Saint-Etienne", "Toulon",
+      "Chamonix", "Biarritz", "Deauville", "Cannes", "Saint-Tropez", "Avignon", "Carcassonne", "Lourdes", "Rocamadour", "Giverny",
+      "Guadeloupe", "Martinique", "Guyane", "Réunion", "Mayotte", "Polynésie", "Nouvelle-Calédonie", "Saint-Barthélemy", "Saint-Martin", "Saint-Pierre-et-Miquelon"
+    ],
+    "culture": [
+      "Croissant", "Baguette", "Fromage", "Vin", "Champagne", "Tour de France", "Cinéma", "Mode", "Parfum", "Gastronomie", 
+      "Ratatouille", "Macaron", "Pétanque", "Cannes", "Roland Garros", "Le Petit Prince", "Marseillaise", "Révolution 1789", "Mai 68", "Coupe du Monde",
+      "Festival de Cannes", "Fête de la Musique", "14 Juillet", "Beaujolais Nouveau", "Galette des Rois", "Chandeleur", "Mardi Gras", "Poisson d'Avril", "Fête des Mères", "Fête des Pères",
+      "Asterix et Obelix", "Les Misérables", "Le Comte de Monte-Cristo", "L'Etranger", "Le Petit Nicolas", "Le Grand Bleu", "Intouchables", "Amélie Poulain", "La Haine", "Les Choristes",
+      "Chanel", "Dior", "Louis Vuitton", "Hermès", "Cartier", "L'Oréal", "Danone", "Renault", "Peugeot", "Citroën"
+    ]
+  },
+  "ar": {
+    "easy": [
+      "شمس", "قمر", "بحر", "جمل", "سيارة", "كرة", "شاي", "خبز", "باب", "مدرسة", 
+      "قلم", "عيون", "قلب", "نوم", "مطر", "ذهب", "ماء", "نار", "كرسي", "شجرة",
+      "طائرة", "مركب", "قطار", "دراجة", "حصان", "خروف", "دجاجة", "سمكة", "عصفور", "قطة",
+      "أحمر", "أخضر", "أزرق", "أصفر", "أسود", "أبيض", "برتقالي", "بني", "وردي", "رمادي",
+      "تفاحة", "موزة", "برتقالة", "عنب", "بطيخ", "تمرة", "زيتونة", "بصلة", "بطاطس", "طماطم"
+    ],
+    "hard": [
+      "ديمقراطية", "عولمة", "بيروقراطية", "ميتافيزيقا", "نوستالجيا", "برغماتية", "استراتيجية", "اقتصاد", "تضخم", "دستور", 
+      "حرية", "عدالة", "منطق", "فلسفة", "وجودية", "تكنولوجيا", "حضارة", "ثقافة", "هوية", "تاريخ",
+      "أيديولوجية", "جيوسياسية", "ديموغرافية", "سيكولوجية", "سوسيولوجية", "أنثروبولوجيا", "أركيولوجيا", "إبستيمولوجيا", "أنطولوجيا", "ثيولوجيا",
+      "رأسمالية", "اشتراكية", "شيوعية", "ليبرالية", "علمانية", "أصولية", "تطرف", "إرهاب", "سلام", "حرب",
+      "نهضة", "تنوير", "حداثة", "ما بعد الحداثة", "عقلانية", "تجريبية", "مثالية", "واقعية", "رومانسية", "كلاسيكية"
+    ],
+    "people": [
+      "محمد صلاح", "رياض محرز", "حكيم زياش", "أم كلثوم", "عبد الحليم حافظ", "فيروز", "عادل إمام", "سعد لمجرد", "الشاب خالد", "المتنبى", 
+      "طه حسين", "نجيب محفوظ", "أحمد زكي", "عمر الشريف", "كاظم الساهر", "ياسين بونو", "شيرين", "عمرو دياب", "ابن بطوطة", "ابن خلدون",
+      "أبو تريكة", "محمود الخطيب", "حازم إمام", "مجدي عبد الغني", "عصام الحضري", "نور الشريف", "محمود عبد العزيز", "يحيى الفخراني", "يسرا", "ليلى علوي",
+      "نانسي عجرم", "إليسا", "هيفاء وهبي", "راغب علامة", "وائل كفوري", "جورج وسوف", "ملحم زين", "نجوى كرم", "عاصي الحلاني", "صابر الرباعي",
+      "هند صبري", "درة", "ظافر العابدين", "لطيفة", "ذكرى", "صوفيا صادق", "أمينة فاخت", "نوال غشام", "نجاة الصغيرة", "فايزة أحمد"
+    ],
+    "places": [
+      "الأهرامات", "برج خليفة", "مكة", "القدس", "جامع الفنا", "البتراء", "النيل", "الصحراء الكبرى", "جبال الأطلس", "القاهرة", 
+      "دبي", "بيروت", "الدار البيضاء", "تونس", "مراكش", "الجزائر", "بغداد", "دمشق", "الإسكندرية", "سد النهضة",
+      "شرم الشيخ", "الغردقة", "الأقصر", "أسوان", "سيوة", "طنجة", "شفشاون", "فاس", "مكناس", "الرباط",
+      "سوسة", "المنستير", "الحمامات", "جربة", "بنزرت", "وهران", "قسنطينة", "عنابة", "تلمسان", "بجاية",
+      "بعلبك", "جبيل", "صور", "صيدا", "طرابلس", "البحر الميت", "العقبة", "وادي رم", "جرش", "عجلون"
+    ],
+    "culture": [
+      "رمضان", "الحج", "الكسكس", "الطاجين", "الكشري", "المسمن", "الفول والطعمية", "الشاورما", "ألف ليلة وليلة", "الفانوس", 
+      "المسلسلات", "القهوة العربية", "الشيشة", "الحناء", "العرس", "العود", "الدبكة", "الرقص الشرقي", "الجامعة العربية", "كأس العرب",
+      "المولد النبوي", "عيد الفطر", "عيد الأضحى", "عاشوراء", "شم النسيم", "رأس السنة الهجرية", "ثورة 25 يناير", "ثورة الياسمين", "المسيرة الخضراء", "حرب أكتوبر",
+      "الهريسة", "البريك", "اللبلابي", "الكفتاجي", "الملوخية", "البقلاوة", "الكنافة", "البسبوسة", "الزلابية", "القطايف",
+      "الجلابة", "القفطان", "الطربوش", "الشاشية", "الكوفية", "العباية", "الدشداشة", "البرنس", "الحايك", "النقاب"
+    ]
+  }
+}

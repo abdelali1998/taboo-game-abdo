@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taboo Extreme</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <button id="theme-btn" class="theme-toggle-btn" onclick="toggleTheme()" title="Toggle Dark/Light Mode">
+        <i class="fa-solid fa-sun"></i>
+    </button>
+
+    <div id="app">
+        
+        <section id="screen-setup" class="screen">
+            <h1>Taboo Extreme</h1>
+            <input type="text" id="host-name-input" placeholder="Enter Your Name">
+            
+            <div style="margin: 20px 0;">
+                <label>Select Language:</label>
+                <select id="lang-select" class="dropdown">
+                    <option value="en">English</option>
+                    <option value="fr">Français</option>
+                    <option value="ar">العربية</option>
+                </select>
+            </div>
+
+            <button class="btn" onclick="lobby.create()">Create Room</button>
+        </section>
+
+        <section id="screen-join" class="screen hidden">
+            <h1>Join Room</h1>
+            <p>Enter your name to join the game.</p>
+            <input type="text" id="join-name-input" placeholder="Enter Your Name">
+            <button class="btn" onclick="lobby.confirmJoin()">Join Game</button>
+        </section>
+
+        <section id="screen-lobby" class="screen hidden">
+            <h2>Lobby</h2>
+            <div class="link-container">
+                <input type="text" id="game-link-input" readonly>
+                <button class="btn-copy" onclick="lobby.copyLink()">
+                    <i class="fa-regular fa-copy"></i>
+                </button>
+            </div>
+
+            <div id="player-list"></div>
+            <button id="btn-continue" class="btn" disabled onclick="teams.init()">Continue to Teams</button>
+        </section>
+
+        <section id="screen-teams" class="screen hidden">
+            <h2>Assign Teams</h2>
+            <p class="hint">Host: Drag names to assign. Click 'X' to Kick players.</p>
+            
+            <div class="teams-wrapper">
+                <div class="team-column">
+                    <h3>Waiting Room</h3>
+                    <div id="waiting-room" class="team-box drop-zone" 
+                         ondrop="teams.drop(event, null)" 
+                         ondragover="teams.allowDrop(event)"></div>
+                </div>
+                <div class="team-column">
+                    <h3>Team 1</h3>
+                    <div id="team-1-box" class="team-box drop-zone" 
+                         ondrop="teams.drop(event, 1)" 
+                         ondragover="teams.allowDrop(event)"></div>
+                </div>
+                <div class="team-column">
+                    <h3>Team 2</h3>
+                    <div id="team-2-box" class="team-box drop-zone" 
+                         ondrop="teams.drop(event, 2)" 
+                         ondragover="teams.allowDrop(event)"></div>
+                </div>
+            </div>
+
+            <div id="host-controls" style="display:none; margin: 20px;">
+                <label>Turn Duration (s): </label>
+                <input type="number" id="timer-setting" value="60" min="10" max="180">
+            </div>
+
+            <button id="btn-start" class="btn" style="display:none" onclick="gameplay.requestStart()">Start Game</button>
+        </section>
+
+        <section id="screen-summary" class="screen hidden">
+            <h2>Round Summary</h2>
+            
+            <div class="summary-card">
+                <div class="score-row">
+                    <div class="team-summ">
+                        <h3>Team 1</h3>
+                        <div id="summ-score-1" class="big-score">0</div>
+                        <div id="summ-members-1" class="members-list"></div>
+                    </div>
+                    <div class="team-summ">
+                        <h3>Team 2</h3>
+                        <div id="summ-score-2" class="big-score">0</div>
+                        <div id="summ-members-2" class="members-list"></div>
+                    </div>
+                </div>
+                
+                <hr style="border-color: var(--border-color); margin: 15px 0;">
+
+                <div class="round-details">
+                    <div class="details-col">
+                        <h4>Target Words</h4>
+                        <ul id="summary-words-list" class="summary-list"></ul>
+                    </div>
+                    <div class="details-col">
+                        <h4>Team Guesses</h4>
+                        <div id="summary-guesses-list" class="summary-log"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="controls-area">
+                <button id="btn-next-turn" class="btn hidden" onclick="gameplay.nextTurn()">Start Next Round</button>
+                
+                <div id="reset-controls" class="hidden reset-box">
+                    <span style="font-size: 0.9em; color: var(--text-muted);">Reset Lang:</span>
+                    <select id="reset-lang-select" class="dropdown-small">
+                        <option value="en">English</option>
+                        <option value="fr">Français</option>
+                        <option value="ar">العربية</option>
+                    </select>
+                    <button class="btn btn-danger" onclick="gameplay.resetGame()">Reset Game</button>
+                </div>
+            </div>
+            
+            <p id="msg-wait-host" class="hint hidden">Waiting for start...</p>
+        </section>
+
+        <section id="screen-game" class="screen hidden">
+            <div class="game-header">
+                <div id="score-board">Team 1: 0 | Team 2: 0</div>
+                <div id="timer">--</div>
+            </div>
+            
+            <h2 id="turn-info">Initializing...</h2>
+            
+            <div id="describer-ready-area" class="hidden">
+                <div class="card">
+                    <h3>You are the Describer!</h3>
+                    <p>Press GO when you are ready.</p>
+                    <button class="btn btn-go" onclick="gameplay.confirmStart()">GO / START</button>
+                </div>
+            </div>
+
+            <div id="host-stuck-controls" class="hidden" style="margin: 10px; padding: 10px; background: #330000; border: 1px solid red; border-radius: 5px;">
+                <p style="color: #ffcccc; margin:0 0 5px 0;">Is the describer stuck/AFK?</p>
+                <button class="btn btn-danger" onclick="gameplay.removeStuckDescriber()">Remove Player & Pass Turn</button>
+            </div>
+
+            <div id="describer-view" class="hidden">
+                <div class="card">
+                    <h3>Describe these words:</h3>
+                    <ul id="target-words-list" class="word-list"></ul>
+                </div>
+                <button class="btn btn-danger" onclick="gameplay.forceSkip()">Skip / End</button>
+            </div>
+
+            <div id="guesser-view" class="hidden">
+                <div class="chat-container">
+                    <div id="guess-feed" class="guess-feed"></div>
+                    <div class="input-area">
+                        <input type="text" id="guess-input" placeholder="Waiting..." disabled autocomplete="off" onkeydown="gameplay.handleInputKey(event)">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/timer.js"></script>
+    <script src="js/lobby.js"></script>
+    <script src="js/teams.js"></script>
+    <script src="js/gameplay.js"></script>
+</body>
+</html>
